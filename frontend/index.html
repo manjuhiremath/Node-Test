@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <h1 class="text-center mt-5">Welcome to Blogs</h1>
+
+    <!-- Blog Creation Form -->
+    <form id="create-user-form" class="mb-4 container w-50">
+      <div>
+        <label for="title">Title:</label>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          class="form-control"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="author">Author:</label>
+        <input
+          type="text"
+          id="author"
+          name="author"
+          class="form-control"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="content">Content:</label>
+        <input
+          type="text"
+          id="content"
+          name="content"
+          class="form-control"
+          required
+        />
+      </div>
+      <br />
+      <button onclick="handleBlogSubmit(event)" type="submit" name="submit" id="submit" class="btn btn-primary">
+        Submit
+      </button>
+    </form>
+
+    <!-- Container for Collapsible Blog Cards -->
+    <div id="blogs-container" class="container w-50">
+      <!-- Blogs will be dynamically inserted here -->
+    </div>
+
+    <!-- Bootstrap JS & Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.7.9/dist/axios.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
